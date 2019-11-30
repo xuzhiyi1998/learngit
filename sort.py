@@ -26,5 +26,20 @@ def InsertSort(listnum):
             j-=1
         listnum[j+1]=temp
     return listnum
-listnum=[2,5,7,1,9,3]
-print(InsertSort(listnum))
+"""快速排序"""
+def QuickSort(listnum):
+    if len(listnum)>=2:
+        mid=listnum[len(listnum)//2]
+        listnum.remove(mid)
+        left,right=[],[]
+        for num in listnum:
+            if num<mid:
+                left.append(num)
+            else:
+                right.append(num)
+        return QuickSort(left)+[mid]+QuickSort(right)
+    else:
+        return listnum
+print(QuickSort([10,11,9,22,3,5,12]))
+
+
