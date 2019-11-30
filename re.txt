@@ -1,1 +1,5 @@
-easy is better we have to be best
+<<<<<<< HEAD
+easy is better and prefect
+=======
+easy is better and prefect
+>>>>>>> fat
